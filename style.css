@@ -1,0 +1,24 @@
+#header {
+	text-align: center;
+}
+
+#container {
+	background-color: white;
+	width: 900px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#body {
+	background-color: #EEE;
+}
+
+.about{
+	width: 600px;
+	float: left;
+}
+
+.photo {
+	width: 450px;
+	float:  right;
+}
