@@ -1,0 +1,201 @@
+
+<!doctype html>
+<html>
+
+<!-- ToggleDiv Script -->
+<script type="text/javascript">
+ function toggleDiv(theDiv) {
+   var el = document.getElementById(theDiv);
+   if (el.style.display == 'none') { el.style.display = '';}
+   else { el.style.display = 'none'; }
+   // return false;
+ }
+</script>
+<!-- End of ToggleDiv Script -->
+
+
+<head>
+	<title>Ping Ngai (Brian) Chung</title>
+  <link rel="stylesheet" type="text/css" href="style.css" />
+</head>
+<body>
+		<div id="container">
+			<div id="header">
+				<h1>Ping Ngai (Brian) Chung's homepage</h1>		
+				<hr>	
+			</div>
+			<div id="content">
+				<div id="main">
+					<img src="photo.jpg" height="210" width="180" align="right">
+					<h2>About</h2>
+						<p>I am a final year Mathematics Ph.D. student at the <a href="https://mathematics.uchicago.edu/">University of Chicago</a>. <br>
+						I mainly work in ergodic theory and dynamical systems.</p>
+						<p>My advisor is <a href="http://math.uchicago.edu/~eskin/">Alex Eskin</a>.</p>						
+						<!-- <p>Here is my <a href="cv1.pdf">CV</a>.</p> -->
+						<hr style="clear: both;" />
+						
+						
+					<a href="javascript:toggleDiv('sectPapers');" style="text-decoration:none;color:#383838">
+						<h2>Selected Papers: </h2>
+					</a>
+					
+					<!-- <div id="sectPapers" style="display:none"> -->
+					<ul>
+							<li><b>Random Walk on Homogeneous spaces with nondiscrete quotients</b>. 
+							 		<!-- <a href="https://arxiv.org/abs/2006.03166">arxiv</a> --><br>
+							 			<a href="javascript:toggleDiv('absgmodh');" style="text-decoration:none;color:#383838">
+								  			Abstract &plusmn
+								  		</a> - in preparation (available upon request)
+								  		<div id="absgmodh" style="display:none">
+								  			We study the problem of classifying stationary measures on homogeneous spaces of the form G/H, where G is a connected
+								  			real Lie group, and H is a closed unimodular subgroup of G. Under an assumption of relative uniform expansion, we show 
+								  			that the stationary measures can be decomposed into homogeneous parts and Bernoulli convolutions. 
+								  			<br><br>
+								  			The main tools used are a relative version of the technique of Eskin-Lindenstrauss, and a measure classification result
+								  			of linear action on real vector spaces based on a result of Bougerol.
+								  		</div>
+							</li><br>
+							
+							<li><b>Stationary measures and orbit closures of random walks on Veech surfaces</b>. 
+							 		<!-- <a href="https://arxiv.org/abs/2006.03166">arxiv</a> --> <br> 
+							 			<a href="javascript:toggleDiv('absVeech');" style="text-decoration:none;color:#383838">
+								  			Abstract &plusmn
+								  		</a>  - in preparation (available upon request)
+								  		<div id="absVeech" style="display:none">
+								  			We study the problem of measure rigidity, equidistribution and orbit closure classification for the action of subsemigroups of the 
+								  			affine diffeomorphism group on a given Veech surface. In particular, we show that if the linear part of the acting semigroup 
+								  			generates a non-elementary subgroup of SL(2, R), then the orbits are finite or dense, and the only nonatomic stationary measure is 
+								  			induced by the given 1-form on the Veech surface.  
+								  		</div>
+							</li><br>
+							
+							
+ 							<li><b>Stationary measures and orbit closures of uniformly expanding random dynamical systems on surfaces</b>. 
+							 		<a href="https://arxiv.org/abs/2006.03166">arxiv</a><br>
+							 			<a href="javascript:toggleDiv('absStatmeas');" style="text-decoration:none;color:#383838">
+								  			Abstract &plusmn
+								  		</a> 
+								  		<a href="slides/surface_slides.pdf">slides</a>
+								  		<a href="https://www.mathtube.org/lecture/video/stationary-measure-and-orbit-closure-classification-random-walks-surfaces">recording</a>
+								  		<div id="absStatmeas" style="display:none">
+								  			We study the problem of classifying stationary measures and orbit closures for non-abelian action 
+								  			on a surface with a given smooth invariant measure. Using a result of Brown and Rodriguez Hertz, 
+								  			we show that under a certain finite verifiable average growth condition, the only nonatomic stationary measure 
+								  			is the given smooth invariant measure, and every orbit closure is either finite or dense. 
+								  			Moreover, every point with infinite orbit equidistributes on the surface with respect to the smooth 
+								  			invariant measure. This is analogous to the results of Benoist-Quint and Eskin-Lindenstrauss in the 
+								  			homogeneous setting, and the result of Eskin-Mirzakhani in the setting of moduli spaces of translation 
+								  			surfaces. We then apply this result to two concrete settings, namely discrete perturbation of the standard 
+								  			map and Out(F_2)-action on a certain character variety. We verify the growth condition analytically in 
+								  			the former setting, and verify numerically in the latter setting.
+								  		</div>
+							</li><br>
+							
+ 							<li><b>Fast, Uniform Scalar Multiplication for Genus 2 Jacobians with Fast Kummers</b> (joint with B. Smith and C. Costello). 
+ 								<a href="https://hal.inria.fr/hal-01353480/document">conference</a><br>
+								<i>International Conference on Selected Areas in Cryptography</i> (2016), 465-481.<br>
+										<a href="javascript:toggleDiv('absKummer');" style="text-decoration:none;color:#383838">
+								  			Abstract &plusmn
+								  		</a> <a href="slides/kummer_slides.pdf">slides</a>
+								  		<div id="absKummer" style="display:none">
+								  			We give one- and two-dimensional scalar multiplication algorithms for Jacobians of genus 2 curves that operate by projecting to
+								  			Kummer surfaces, where we can exploit faster and more uniform pseudomultiplication, before recovering the proper “signed” output back on the
+								  			Jacobian. This extends the work of L´opez and Dahab, Okeya and Sakurai, and Brier and Joye to genus 2, and also to two-dimensional scalar
+								  			multiplication. The technique is especially interesting in genus 2, because
+								  			Kummer surfaces can outperform comparable elliptic curve systems.
+								  		</div>
+							</li><br>
+							
+							<li><b>Bounded gaps between products of special primes</b> (joint with S. Li). 
+ 								<a href="https://www.mdpi.com/2227-7390/2/1/37">journal</a><br>
+								<i>Mathematics</i> 2(1) (2014), 37-52.<br>
+										<a href="javascript:toggleDiv('absboundedgaps');" style="text-decoration:none;color:#383838">
+								  			Abstract &plusmn
+								  		</a> <a href="slides/boundedgaps_slides.pdf">slides</a>
+								  		<div id="absboundedgaps" style="display:none">
+								  			In their breakthrough paper in 2006, Goldston, Graham, Pintz and Yıldırım proved several results about bounded gaps 
+								  			between products of two distinct primes. Frank Thorne expanded on this result, proving bounded gaps in the set of 
+								  			square-free numbers with r prime factors for any r ≥ 2, all of which are in a given set of primes. His results 
+								  			yield applications to the divisibility of class numbers and the triviality of ranks of elliptic curves. In this 
+								  			paper, we relax the condition on the number of prime factors and prove an analogous result using a modified approach. 
+								  			We then revisit Thorne’s applications and give a better bound in each case. 
+								  		</div>
+							</li><br>
+							
+							<li><b>On the c-strong coloring of t-intersecting hypergraphs</b>. 
+ 								<a href="https://www.sciencedirect.com/science/article/pii/S0012365X13000824">journal</a><br>
+								<i>Discrete Mathematics</i> 313 (2013), 1063-1069.<br>
+										<a href="javascript:toggleDiv('abschrom');" style="text-decoration:none;color:#383838">
+								  			Abstract &plusmn
+								  		</a>
+								  		<div id="abschrom" style="display:none">
+								  			For a fixed c≥2, a c-strong coloring of the hypergraph G is a vertex coloring such that each edge e 
+								  			of G covers vertices with at least min{c,|e|} distinct colors. A hypergraph is t-intersecting if the 
+								  			intersection of any two of its edges contains at least t vertices. This paper addresses the question: 
+								  			what is the minimum number of colors which suffices to c-strong color any t-intersecting hypergraph? 
+								  			We first show that the number of colors required to c-strong color a hypergraph of size n is O(n). 
+								  			Then we prove that we can use finitely many colors to 3-strong color any 2-intersecting hypergraph. 
+								  			Finally, we show that 2c−1 colors are enough to c-strong color any shifted (c−1)-intersecting hypergraph, 
+								  			and 2c−2 colors are enough to c-strong color any shifted t-intersecting hypergraph for t≥c. Both chromatic 
+								  			numbers are optimal and match conjectured statements in which the shifted condition is removed.
+								  		</div>
+							</li><br>
+							
+							<li><b>Isoperimetric pentagonal tilings</b> (joint with F. Morgan et al. ). 
+ 								<a href="https://www.ams.org/journals/notices/201205/rtx120500632p.pdf">journal</a><br>
+								<i>Notices Amer. Math. Soc.</i> 59 (2012), 632-640.<br>
+										<a href="javascript:toggleDiv('abspentagons');" style="text-decoration:none;color:#383838">
+								  			Abstract &plusmn
+								  		</a>
+								  		<div id="abspentagons" style="display:none">
+								  			We identify least-perimeter unit-area tilings of the plane by convex pentagons, namely
+								  			tilings by Cairo and Prismatic pentagons, find infinitely many, and prove that they
+								  			minimize perimeter among tilings by convex polygons with at most five sides.  <br>
+								  			(see Remark 2.3 for the main reason I was part of the collaboration when I was a freshman.)
+								  		</div>
+							</li><br>
+							
+					</ul>
+					
+					<h2>Notes:</h2>							
+							
+					<ul>
+							<li><b>Stationary measures on vector spaces</b>. 
+							 		<a href="research/StatVSpace6.pdf">pdf</a><br>
+							 			<a href="javascript:toggleDiv('absStatVspace');" style="text-decoration:none;color:#383838">
+								  			Abstract &plusmn
+								  		</a>
+								  		<div id="absStatVspace" style="display:none">
+								  			We study the classification of stationary measures for linear actions on vector spaces. 
+								  		</div>
+							</li>
+					</ul>
+ 					
+ 					
+ 					
+ 					<p>Other published work can be found in <a href="https://scholar.google.com/citations?user=vDnGYe4AAAAJ&hl=en">Google scholar</a>. </p>	
+					<!-- </div> -->
+					
+						<hr>	
+					
+					<a href="javascript:toggleDiv('sectContact');" style="text-decoration:none;color:#383838">
+						<h2>Contact Info &plusmn </h2>
+					</a>
+					<div id="sectContact" style="display:none">
+						<p>Email: briancpn (followed by @math.uchicago.edu)</p>
+						<p>Mail: Department of Mathematics
+						<br>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp University of Chicago		
+						<br>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp 5734 S. University Avenue
+						<br>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp Chicago, IL, 60637												
+						</p>
+						<p>Office: Eckhart							
+						<hr>	
+					</div>
+				</div>
+				  <div id="footer">
+		copyright &copy; 2020 Ping Ngai (Brian) Chung 
+  </div>				
+			</div>		
+		</div>
+</body>
+</html>
